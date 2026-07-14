@@ -1,0 +1,220 @@
+.elementor-2688 .elementor-element.elementor-element-e0de1aa{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-2688 .elementor-element.elementor-element-e1b8564{--display:flex;}@media(min-width:768px){.elementor-2688 .elementor-element.elementor-element-e0de1aa{--content-width:1200px;}}/* Start custom CSS for html, class: .elementor-element-ec8e200 *//* Blog Post Wrapper */
+.blog-post {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  line-height: 1.75;
+  background-color: #ffffff;
+}
+
+/* Main Blog Title */
+.blog-post h1 {
+  font-size: 34px;
+  margin-bottom: 22px;
+  line-height: 1.3;
+  text-align: center;
+  color: #1f3d2b;
+}
+
+/* Section Headings */
+.blog-post h2 {
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #2e6b4e;
+}
+
+/* Sub Headings */
+.blog-post h3 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #3b7d5c;
+}
+
+/* Paragraphs */
+.blog-post p {
+  font-size: 16.5px;
+  margin-bottom: 18px;
+}
+
+/* Lists */
+.blog-post ul {
+  padding-left: 22px;
+  margin-bottom: 20px;
+}
+
+.blog-post ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Divider Line */
+.blog-post hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ccc, transparent);
+  margin: 45px 0;
+}
+
+/* Tables */
+.blog-post table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 16px;
+}
+
+.blog-post table th {
+  background-color: #f2f7f4;
+  color: #1f3d2b;
+  font-weight: 600;
+}
+
+.blog-post table th,
+.blog-post table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Links */
+.blog-post a {
+  color: #2e6b4e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Call-to-Action Highlight (Last Paragraph) */
+.blog-post p:last-of-type {
+  background: #f7fbf9;
+  padding: 20px;
+  border-left: 4px solid #2e6b4e;
+  font-size: 17px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .blog-post h1 {
+    font-size: 28px;
+  }
+
+  .blog-post h2 {
+    font-size: 22px;
+  }
+
+  .blog-post h3 {
+    font-size: 18px;
+  }
+
+  .blog-post p,
+  .blog-post ul li {
+    font-size: 15.5px;
+  }
+}
+/* Blog Layout */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Sidebar */
+.blog-sidebar {
+  position: sticky;
+  top: 80px;
+}
+
+/* Sidebar Boxes */
+.sidebar-box {
+  background: #f7fbf9;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.sidebar-box h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #2e6b4e;
+}
+
+/* Sidebar Lists */
+.sidebar-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-box ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sidebar-box ul li:hover {
+  text-decoration: underline;
+}
+
+/* Search Input */
+.sidebar-box input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Comments */
+.blog-comments {
+  margin-top: 60px;
+}
+
+.blog-comments h3 {
+  margin-bottom: 15px;
+  color: #2e6b4e;
+}
+
+/* Comment Form */
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.comment-form button {
+  background: #2e6b4e;
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background: #24543e;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-sidebar {
+    position: relative;
+    top: auto;
+  }
+}/* End custom CSS */
