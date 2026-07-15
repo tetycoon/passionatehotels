@@ -30,7 +30,7 @@ export const Yercaud = () => (
   <DestinationTemplate 
     title="Yercaud" 
     subtitle="GOLDEN PARADISE"
-    image="/assets/uploads/2026/01/Top-10-Beautiful-Places-To-Visit-In-Yercaud-Tour-Plan-To-India-e1767956437965.jpg"
+    image="/assets/src_images/pagoda-point-e1773050096125.png"
     description="As a leading family resort in Yercaud, we offer spacious rooms, scenic views, and a calm environment that makes every stay special. Guests consistently choose us as the best resort in Yercaud for weekend holidays, family vacations, and couple retreats."
   />
 );
@@ -39,7 +39,7 @@ export const Yelagiri = () => (
   <DestinationTemplate 
     title="Yelagiri" 
     subtitle="TRANQUIL HILLS"
-    image="/assets/uploads/2026/02/Swami-Malai-Hills.jpg"
+    image="/assets/src_images/Yelagiri-Nature-Park.jpg"
     description="A Yelagiri resort is the perfect choice for a refreshing weekend escape from busy city life. Known for its peaceful climate and scenic hills, Yelagiri has become one of the best weekend getaway destinations for families, couples, and friends."
   />
 );
@@ -48,7 +48,7 @@ export const Chennai = () => (
   <DestinationTemplate 
     title="Chennai OMR" 
     subtitle="LYNWOOD VILLA"
-    image="/assets/uploads/2026/01/Kovalam-Covelong-Beach-e1773050031455.jpg"
+    image="/assets/src_images/Muttukadu-Boat-House-East-Coast-Road_.jpg"
     description="Lynwood Villa is an ideal destination for a peaceful weekend stay in OMR, Chennai, offering a perfect blend of privacy, comfort, and open space. Located along the scenic OMR, for families, friends, and corporate groups looking for a premium stay experience."
   />
 );

@@ -7,7 +7,7 @@ const Home = () => {
     <div className="page-wrapper">
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: "url('/assets/uploads/2026/01/Top-10-Beautiful-Places-To-Visit-In-Yercaud-Tour-Plan-To-India-e1767956437965.jpg')" }}></div>
+        <div className="hero-bg" style={{ backgroundImage: "url('/assets/src_images/yercaud_main.webp')" }}></div>
         <div className="hero-overlay"></div>
         <div className="container hero-content">
           <p className="hero-subtitle">PASSIONATE HOTELS</p>
@@ -27,7 +27,7 @@ const Home = () => {
         
         <div className="destinations-grid">
           <Link to="/yercaud" className="destination-card">
-            <img src="/assets/uploads/2026/01/Top-10-Beautiful-Places-To-Visit-In-Yercaud-Tour-Plan-To-India-e1767956437965.jpg" alt="Yercaud Resort" className="dest-img" />
+            <img src="/assets/src_images/yercaud-view-1.jpg" alt="Yercaud Resort" className="dest-img" />
             <div className="dest-overlay">
               <h3>Yercaud</h3>
               <p>Elevated tranquility.</p>
@@ -35,7 +35,7 @@ const Home = () => {
           </Link>
           
           <Link to="/yelagiri" className="destination-card">
-            <img src="/assets/uploads/2026/02/Swami-Malai-Hills.jpg" alt="Yelagiri Resort" className="dest-img" />
+            <img src="/assets/src_images/Jalagamparai-Falls.webp" alt="Yelagiri Resort" className="dest-img" />
             <div className="dest-overlay">
               <h3>Yelagiri</h3>
               <p>Untamed adventure.</p>
@@ -43,7 +43,7 @@ const Home = () => {
           </Link>
           
           <Link to="/chennai" className="destination-card">
-            <img src="/assets/uploads/2026/01/Kovalam-Covelong-Beach-e1773050031455.jpg" alt="Chennai Resort" className="dest-img" />
+            <img src="/assets/src_images/The-coastline-of-Chennai.jpg" alt="Chennai Resort" className="dest-img" />
             <div className="dest-overlay">
               <h3>Chennai OMR</h3>
               <p>Urban luxury.</p>
@@ -62,21 +62,21 @@ const Home = () => {
         <div className="features-grid">
           <div className="feature-item">
             <div className="feature-img-wrapper">
-               <img src="/assets/uploads/2026/01/indoor-games-1.jpg" alt="Leisure" />
+               <img src="/assets/src_images/campfire2.webp" alt="Leisure" />
             </div>
             <h4>Leisure & Recreation</h4>
             <p>Camp fires and bespoke activity guides.</p>
           </div>
           <div className="feature-item">
             <div className="feature-img-wrapper">
-               <img src="/assets/uploads/2026/01/Las-Brisas-multi-cuisine-restaurants-in-Rishikesh.jpeg" alt="Dining" />
+               <img src="/assets/src_images/restaurant.webp" alt="Dining" />
             </div>
             <h4>Culinary Mastery</h4>
             <p>Multi-cuisine dining under the stars.</p>
           </div>
           <div className="feature-item">
             <div className="feature-img-wrapper">
-               <img src="/assets/uploads/2026/01/download-11.jpg" alt="Events" />
+               <img src="/assets/src_images/Midvalley_1.webp" alt="Events" />
             </div>
             <h4>Celebrations</h4>
             <p>Flawless venues for corporate and family gatherings.</p>

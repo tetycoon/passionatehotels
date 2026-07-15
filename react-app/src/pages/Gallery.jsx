@@ -3,14 +3,14 @@ import './Gallery.css';
 
 const Gallery = () => {
   const images = [
-    "/assets/uploads/2026/01/Top-10-Beautiful-Places-To-Visit-In-Yercaud-Tour-Plan-To-India-e1767956437965.jpg",
-    "/assets/uploads/2026/01/indoor-games-1.jpg",
-    "/assets/uploads/2026/01/Las-Brisas-multi-cuisine-restaurants-in-Rishikesh.jpeg",
-    "/assets/uploads/2026/02/Swami-Malai-Hills.jpg",
-    "/assets/uploads/2026/02/Jalagamparai-Falls.jpg",
-    "/assets/uploads/2026/02/Jalakandeswarar-Temple.jpg",
-    "/assets/uploads/2026/01/Kovalam-Covelong-Beach-e1773050031455.jpg",
-    "/assets/uploads/2026/01/download-11.jpg"
+    "/assets/src_images/campfire2.webp",
+    "/assets/src_images/Midvalley_1.webp",
+    "/assets/src_images/restaurant.webp",
+    "/assets/src_images/Sithulpawwa-Rock-Temple-Ancient-Buddhist-Monastery-Guide.jpg",
+    "/assets/src_images/Kurinji_3.webp",
+    "/assets/src_images/Midvalley_4.webp",
+    "/assets/src_images/yercaud-lake-e1767956215728.webp",
+    "/assets/src_images/chennai.webp"
   ];
 
   return (
