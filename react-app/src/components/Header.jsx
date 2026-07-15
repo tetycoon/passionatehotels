@@ -25,7 +25,7 @@ const Header = ({ onOpenEnquiry }) => {
 
         <nav className={`desktop-nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          <Link to="/yercaud" onClick={() => setMobileMenuOpen(false)}>Yercaud</Link>
+          <Link to="/family-resort-in-yercaud" onClick={() => setMobileMenuOpen(false)}>Yercaud</Link>
           <Link to="/yelagiri" onClick={() => setMobileMenuOpen(false)}>Yelagiri</Link>
           <Link to="/chennai" onClick={() => setMobileMenuOpen(false)}>Chennai</Link>
           <Link to="/gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</Link>

@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Destinations</h4>
           <ul>
-            <li><Link to="/yercaud">Yercaud</Link></li>
+            <li><Link to="/family-resort-in-yercaud">Yercaud</Link></li>
             <li><Link to="/yelagiri">Yelagiri</Link></li>
             <li><Link to="/chennai">Chennai (OMR)</Link></li>
           </ul>
