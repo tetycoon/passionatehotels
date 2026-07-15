@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
-  /* Luminous Resort Core Colors */
-  --color-primary: #FAFAFA; /* Off White */
-  --color-secondary: #F3EFEA; /* Pale Beige */
-  --color-tertiary: #8A9A86; /* Sage Green */
-  --color-neutral: #2A2A2A; /* Deep Espresso */
+  /* Aethelgard Core Colors */
+  --color-primary: #121212; /* Deep Charcoal */
+  --color-secondary: #2C2421; /* Rich Earth Brown */
+  --color-tertiary: #D4AF37; /* Sophisticated Gold */
+  --color-neutral: #e5e2df; /* Warm Bone */
   
   /* Additional tokens */
-  --color-bg-base: #FAFAFA;
-  --color-bg-elevated: #FFFFFF;
-  --color-border: rgba(0, 0, 0, 0.08);
-  --color-gold-muted: rgba(138, 154, 134, 0.3);
+  --color-bg-base: #131312;
+  --color-bg-elevated: #1c1c1a;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-gold-muted: rgba(212, 175, 55, 0.3);
   
-  --color-text-primary: #2A2A2A;
-  --color-text-secondary: #5C5C5C;
-  --color-accent-gold: #8A9A86;
-  --color-accent-gold-hover: #71816D;
-  --shadow-glow: 0 4px 12px rgba(138, 154, 134, 0.3);
+  --color-text-primary: #e5e2df;
+  --color-text-secondary: rgba(229, 226, 223, 0.7);
+  --color-accent-gold: #D4AF37;
+  --color-accent-gold-hover: #C19F30;
+  --shadow-glow: 0 4px 12px rgba(212, 175, 55, 0.3);
 
   /* Typography */
-  --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'Outfit', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
   
   /* Spacing */
   --space-1: 8px;
@@ -34,8 +34,8 @@
   --space-12: 96px;
   --section-gap: 160px;
   
-  /* Radii - Soft natural feel */
-  --radius-none: 8px;
+  /* Radii - Sharp for architectural feel */
+  --radius-none: 0px;
 }
 
 * {
@@ -130,16 +130,16 @@ img {
 }
 
 .btn-outline:hover {
-  background-color: rgba(138, 154, 134, 0.1);
+  background-color: rgba(212, 175, 55, 0.1);
   transform: translateY(-2px);
 }
 
 /* Glassmorphism utility */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(20, 26, 22, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Utility classes */
