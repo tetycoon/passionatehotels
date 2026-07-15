@@ -19,8 +19,7 @@ const Header = ({ onOpenEnquiry }) => {
     <header className={`header ${isScrolled ? 'scrolled glass' : ''}`}>
       <div className="container header-container">
         <Link to="/" className="logo">
-          {/* We will use text logo for now, can replace with img later */}
-          <span className="logo-text">Passionate<br/>Hotels</span>
+          <img src="/assets/src_images/logo.png" alt="Passionate Hotels" className="logo-img" style={{ height: '40px', display: 'block', width: 'auto' }} />
         </Link>
 
         <nav className={`desktop-nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
