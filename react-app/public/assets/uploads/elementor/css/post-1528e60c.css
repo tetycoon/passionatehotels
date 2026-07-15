@@ -1,0 +1,103 @@
+.elementor-1528 .elementor-element.elementor-element-6a574ab{--display:flex;}.elementor-1528 .elementor-element.elementor-element-132daf1{text-align:center;}@media(max-width:1024px){.elementor-1528 .elementor-element.elementor-element-132daf1{text-align:center;}}@media(max-width:767px){.elementor-1528 .elementor-element.elementor-element-ca50c3f{width:100%;max-width:100%;}.elementor-1528 .elementor-element.elementor-element-132daf1 .elementor-heading-title{font-size:22px;}}/* Start custom CSS for html, class: .elementor-element-ca50c3f */.ph-footer {
+  background-color: #0f5c2a;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+.ph-footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.ph-footer h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.ph-footer p,
+.ph-footer li,
+.ph-footer a,
+.ph-footer small {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #e6f3eb;
+}
+
+.ph-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ph-footer li {
+  margin-bottom: 8px;
+}
+
+.ph-footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ph-footer a:hover {
+  color: #ffd966;
+}
+
+/* Social Icons */
+.ph-social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.ph-social-icons a {
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  color: #0f5c2a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.ph-social-icons a:hover {
+  background: #ffd966;
+  transform: translateY(-3px);
+}
+
+/* Bottom bar */
+.ph-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .ph-footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 📱 MOBILE = DESKTOP FOOTER COMPRESSED */
+@media (max-width: 576px) {
+
+  .ph-footer {
+    overflow-x: hidden;
+  }
+
+  .ph-footer-container {
+    transform: scale(0.72);          /* 🔥 desktop → compressed */
+    transform-origin: top left;
+    width: 139%;                     /* compensate scale */
+  }
+
+}/* End custom CSS */
