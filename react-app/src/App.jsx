@@ -16,8 +16,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/family-resort-in-yercaud" element={<Yercaud />} />
+            <Route path="/family-resort-in-yercaud/index.html" element={<Yercaud />} />
             <Route path="/yelagiri" element={<Yelagiri />} />
+            <Route path="/yelagiri/index.html" element={<Yelagiri />} />
             <Route path="/chennai" element={<Chennai />} />
+            <Route path="/chennai/index.html" element={<Chennai />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/booking-confirmation" element={<BookingConfirmation />} />
