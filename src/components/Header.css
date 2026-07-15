@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-4);
 }
 
 .logo {
@@ -37,7 +38,13 @@
 
 .desktop-nav {
   display: flex;
-  gap: var(--space-6);
+  gap: var(--space-4);
+}
+
+@media (max-width: 1200px) {
+  .desktop-nav {
+    gap: var(--space-3);
+  }
 }
 
 .desktop-nav a {
