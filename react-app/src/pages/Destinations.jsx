@@ -15,7 +15,7 @@ const DestinationTemplate = ({ title, subtitle, image, description }) => {
       <section className="section container section-padding text-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
         <p className="subtitle">THE EXPERIENCE</p>
         <h2 style={{ color: 'var(--color-tertiary)', marginBottom: 'var(--space-4)' }}>Sanctuary of Serenity</h2>
-        <p style={{ fontSize: '1rem', lineHeight: '2', color: 'rgba(229, 226, 223, 0.8)' }}>
+        <p style={{ fontSize: '1rem', lineHeight: '2', color: 'var(--color-text-secondary)' }}>
           {description}
         </p>
         <button className="btn-primary" onClick={() => document.querySelector('.header-actions .btn-primary').click()} style={{ marginTop: 'var(--space-6)' }}>

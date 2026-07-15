@@ -60,7 +60,7 @@ const Contact = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15632.748184499645!2d78.19694465!3d11.77701835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babfae6a64bbdfd%3A0xc3f10137d6e87fcd!2sYercaud%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
-                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} 
+                style={{ border: 0 }} 
                 allowFullScreen="" 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
@@ -80,7 +80,7 @@ const Contact = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31139.757049432657!2d78.61864575!3d12.57659615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac54a1a5b67d51%3A0x8670d859f77f989f!2sYelagiri%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
-                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} 
+                style={{ border: 0 }} 
                 allowFullScreen="" 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
@@ -100,7 +100,7 @@ const Contact = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124409.80587289564!2d80.12519175!3d12.98637775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d1e4c7676c5%3A0x19dfa4a2a875a6c3!2sOld%20Mahabalipuram%20Rd%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
-                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} 
+                style={{ border: 0 }} 
                 allowFullScreen="" 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
