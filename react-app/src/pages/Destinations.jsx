@@ -47,18 +47,22 @@ export const Yercaud = () => {
         </div>
       </div>
 
-      <section className="section container section-padding text-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <p className="subtitle">THE EXPERIENCE</p>
-        <h2 style={{ color: 'var(--color-tertiary)', marginBottom: 'var(--space-4)' }}>Comfortable Resort in Yercaud for Family Stays</h2>
-        <p style={{ fontSize: '1rem', lineHeight: '2', color: 'var(--color-text-secondary)', textAlign: 'left', marginBottom: 'var(--space-3)' }}>
+      <section className="section container section-padding" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div className="text-center" style={{ marginBottom: 'var(--space-6)' }}>
+          <p className="subtitle">THE EXPERIENCE</p>
+          <h2 style={{ color: 'var(--color-tertiary)' }}>Comfortable Resort in Yercaud for Family Stays</h2>
+        </div>
+        <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--color-text-secondary)', textAlign: 'justify', marginBottom: 'var(--space-4)' }}>
           Golden Paradise Hotel is a peaceful and welcoming best family resort in Yercaud, thoughtfully designed for families, couples, and friends seeking a relaxing hill-station getaway. Located as a convenient resort near Yercaud bus stand, our property offers easy access while maintaining calm, nature-filled surroundings.
         </p>
-        <p style={{ fontSize: '1rem', lineHeight: '2', color: 'var(--color-text-secondary)', textAlign: 'left', marginBottom: 'var(--space-3)' }}>
+        <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--color-text-secondary)', textAlign: 'justify', marginBottom: 'var(--space-6)' }}>
           We’ve created a comfortable and welcoming experience where every detail is carefully planned to help you relax and feel cared for. As a trusted family resort, Golden Paradise Hotel focuses on comfort, safety, and peaceful living so guests of all ages can enjoy their stay without stress or worry.
         </p>
-        <button className="btn-primary" onClick={() => document.querySelector('.header-actions .btn-primary').click()} style={{ marginTop: 'var(--space-4)' }}>
-          Reserve Your Stay
-        </button>
+        <div className="text-center">
+          <button className="btn-primary" onClick={() => document.querySelector('.header-actions .btn-primary').click()}>
+            Reserve Your Stay
+          </button>
+        </div>
       </section>
 
       <section className="section" style={{ backgroundColor: 'var(--color-secondary)' }}>
@@ -104,16 +108,18 @@ export const Yercaud = () => {
         </div>
       </section>
 
-      <section className="section container section-padding text-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <h2 style={{ color: 'var(--color-tertiary)', marginBottom: 'var(--space-4)' }}>Explore The World</h2>
-        <div className="glass" style={{ padding: 'var(--space-6)', borderRadius: 'var(--radius-none)', textAlign: 'left', fontStyle: 'italic' }}>
-          <p style={{ color: 'var(--color-text-secondary)' }}>
+      <section className="section container section-padding" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div className="text-center" style={{ marginBottom: 'var(--space-6)' }}>
+          <h2 style={{ color: 'var(--color-tertiary)' }}>A Message from the Owner</h2>
+        </div>
+        <div className="glass" style={{ padding: 'var(--space-6)', borderRadius: 'var(--radius-lg)', textAlign: 'justify', fontStyle: 'italic', boxShadow: 'var(--shadow-glow)' }}>
+          <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--color-text-secondary)' }}>
             Welcome to Golden Paradise, my peaceful hill retreat in Yercaud. I personally created this resort with one simple intention — to give every guest a safe, comfortable, and genuinely relaxing stay that feels like home. As someone who truly loves Yercaud and its calm beauty, I wanted to build a place where guests could disconnect from stress and reconnect with nature.
           </p>
-          <p style={{ color: 'var(--color-text-secondary)', marginTop: 'var(--space-3)' }}>
+          <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--color-text-secondary)', marginTop: 'var(--space-4)' }}>
             Surrounded by misty hills, cool weather, and greenery, Golden Paradise is designed to offer peace, privacy, and comfort in every detail. I sincerely look forward to welcoming you personally and hosting you at Golden Paradise — a place built with care, run with heart, and surrounded by Yercaud’s golden charm.
           </p>
-          <p style={{ color: 'var(--color-text-primary)', fontWeight: '600', marginTop: 'var(--space-4)', textAlign: 'right' }}>
+          <p style={{ color: 'var(--color-text-primary)', fontWeight: '600', marginTop: 'var(--space-6)', textAlign: 'right', fontSize: '1.1rem' }}>
             — Arun., Owner of PassionateHotels
           </p>
         </div>
