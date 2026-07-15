@@ -18,8 +18,9 @@ const Header = ({ onOpenEnquiry }) => {
   return (
     <header className={`header ${isScrolled ? 'scrolled glass' : ''}`}>
       <div className="container header-container">
-        <Link to="/" className="logo">
-          <img src="/assets/src_images/Logo.png" alt="Passionate Hotels" className="logo-img" style={{ height: '40px', display: 'block', width: 'auto' }} />
+        <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+          <img src="/assets/src_images/Logo.png" alt="Passionate Hotels" className="logo-img" style={{ height: '45px', width: '45px', borderRadius: '50%', objectFit: 'cover', border: '1px solid rgba(255, 255, 255, 0.1)' }} />
+          <span className="logo-text" style={{ fontSize: '1.2rem', fontWeight: '500', whiteSpace: 'nowrap' }}>Passionate Hotels</span>
         </Link>
 
         <nav className={`desktop-nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>

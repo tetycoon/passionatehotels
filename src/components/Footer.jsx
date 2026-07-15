@@ -8,7 +8,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img src="/assets/src_images/Logo.png" alt="Passionate Hotels" className="footer-logo" style={{ height: '70px', width: 'auto', marginBottom: 'var(--space-3)' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
+            <img src="/assets/src_images/Logo.png" alt="Passionate Hotels" style={{ height: '55px', width: '55px', borderRadius: '50%', objectFit: 'cover', border: '1px solid rgba(255, 255, 255, 0.1)' }} />
+            <span className="logo-text" style={{ fontSize: '1.4rem', fontWeight: '500', whiteSpace: 'nowrap' }}>Passionate Hotels</span>
+          </div>
           <p>Where Every Stay becomes a Journey of Escape, Relaxation, and Celebration.</p>
           <div className="social-links">
             <a href="#"><Globe size={20} /></a>
