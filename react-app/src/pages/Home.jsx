@@ -26,7 +26,7 @@ const Home = () => {
         </div>
         
         <div className="destinations-grid">
-          <Link to="/yercaud" className="destination-card">
+          <Link to="/family-resort-in-yercaud" className="destination-card">
             <img src="/assets/src_images/yercaud-view-1.jpg" alt="Yercaud Resort" className="dest-img" />
             <div className="dest-overlay">
               <h3>Yercaud</h3>
