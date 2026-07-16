@@ -97,7 +97,7 @@ const Home = () => {
       </section>
 
       {/* Welcome Section */}
-      <section className="section container section-padding text-center" style={{ maxWidth: '900px', margin: '0 auto' }}>
+      <section className="section container section-padding text-center scroll-animate fade-up" style={{ maxWidth: '900px', margin: '0 auto' }}>
         <p className="subtitle">WELCOME TO PASSIONATE HOTELS</p>
         <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: 'var(--color-neutral)' }}>Escape.. Relax.. Celebrate..</h2>
         <div style={{ width: '60px', height: '1px', background: 'var(--color-tertiary)', margin: 'var(--space-3) auto var(--space-4)' }}></div>
@@ -108,14 +108,14 @@ const Home = () => {
 
       {/* Overhauled Resort Showcase Cards Section */}
       <section className="section container section-padding" style={{ borderTop: '1px solid var(--color-border)' }}>
-        <div className="section-header text-center">
+        <div className="section-header text-center scroll-animate fade-up">
           <p className="subtitle">OUR SANCTUARIES</p>
           <h2>Curated Escapes</h2>
         </div>
         
         <div className="destinations-showcase-grid">
           {/* Yercaud Card */}
-          <div className="luxury-escapes-card glass animate-fade-in-up">
+          <div className="luxury-escapes-card glass scroll-animate fade-up">
             <div className="escapes-img-frame">
               <img src="/assets/src_images/yercaud-view-1.jpg" alt="Yercaud Resort" />
               <div className="escapes-gold-corner"></div>
@@ -138,7 +138,7 @@ const Home = () => {
           </div>
 
           {/* Yelagiri Card */}
-          <div className="luxury-escapes-card glass animate-fade-in-up" style={{ flexDirection: 'row-reverse' }}>
+          <div className="luxury-escapes-card glass scroll-animate fade-up" style={{ flexDirection: 'row-reverse' }}>
             <div className="escapes-img-frame">
               <img src="/assets/src_images/Jalagamparai-Falls.webp" alt="Yelagiri Resort" />
               <div className="escapes-gold-corner" style={{ left: '0px', right: 'auto', borderRight: 'none', borderLeft: '1px solid var(--color-tertiary)', borderBottom: 'none', borderTop: '1px solid var(--color-tertiary)' }}></div>
@@ -166,13 +166,13 @@ const Home = () => {
       <section className="section" style={{ backgroundColor: 'var(--color-bg-elevated)', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container section-padding">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--space-6)' }}>
-            <div className="glass" style={{ padding: 'var(--space-5)', borderTop: '2px solid var(--color-tertiary)', borderRadius: '0px' }}>
+            <div className="glass scroll-animate fade-up" style={{ padding: 'var(--space-5)', borderTop: '2px solid var(--color-tertiary)', borderRadius: '0px' }}>
               <h3 style={{ color: 'var(--color-neutral)', marginTop: 0, marginBottom: 'var(--space-3)' }}>A Resort That Feels Like Home</h3>
               <p style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8', fontSize: '1rem' }}>
                 From the moment you arrive, you’ll be greeted with warm hospitality and an inviting atmosphere. Our thoughtfully designed accommodations, paired with modern amenities and natural surroundings, create the perfect setting for relaxation and togetherness.
               </p>
             </div>
-            <div className="glass" style={{ padding: 'var(--space-5)', borderTop: '2px solid var(--color-tertiary)', borderRadius: '0px' }}>
+            <div className="glass scroll-animate fade-up" style={{ padding: 'var(--space-5)', borderTop: '2px solid var(--color-tertiary)', borderRadius: '0px' }}>
               <h3 style={{ color: 'var(--color-neutral)', marginTop: 0, marginBottom: 'var(--space-3)' }}>Perfect for Every Occasion</h3>
               <p style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8', fontSize: '1rem' }}>
                 Be it a weekend escape, a festive celebration, or a group holiday, Passionate Hotels is the destination of choice. Spacious family quarters, curated group packages, and seasonal offers ensure that every guest finds more than just a stay—they find an experience worth repeating.
@@ -184,7 +184,7 @@ const Home = () => {
 
       {/* Why Choose Yercaud / Golden Paradise section */}
       <section className="section container section-padding">
-        <div className="text-center" style={{ marginBottom: 'var(--space-6)' }}>
+        <div className="text-center scroll-animate fade-up" style={{ marginBottom: 'var(--space-6)' }}>
           <p className="subtitle">EXPERIENCE COMFORT</p>
           <h2 style={{ color: 'var(--color-neutral)' }}>Why Choose Golden Paradise Yercaud</h2>
           <div style={{ width: '50px', height: '1px', background: 'var(--color-tertiary)', margin: 'var(--space-2) auto' }}></div>
@@ -198,7 +198,7 @@ const Home = () => {
             { title: "📍 Prime Location", desc: "Close to Yercaud Lake, viewpoints, and major tourist attractions." },
             { title: "💰 Affordable Stay", desc: "Enjoy a comfortable and budget-friendly stay without compromising quality." }
           ].map((item, idx) => (
-            <div key={idx} className="glass why-choose-card" style={{ padding: 'var(--space-4)', borderRadius: '0px', borderLeft: '3px solid var(--color-tertiary)' }}>
+            <div key={idx} className="glass why-choose-card scroll-animate fade-up" style={{ padding: 'var(--space-4)', borderRadius: '0px', borderLeft: '3px solid var(--color-tertiary)' }}>
               <h4 style={{ color: 'var(--color-neutral)', marginTop: 0, marginBottom: 'var(--space-2)' }}>{item.title}</h4>
               <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: '1.7', color: 'var(--color-text-secondary)' }}>{item.desc}</p>
             </div>
@@ -209,27 +209,27 @@ const Home = () => {
       {/* Amenities Section */}
       <section className="section" style={{ backgroundColor: 'var(--color-secondary)', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container section-padding text-center">
-          <div className="section-header">
+          <div className="section-header scroll-animate fade-up">
             <p className="subtitle">THE ART OF LIVING</p>
             <h2>Refined Experiences</h2>
           </div>
           
           <div className="features-grid">
-            <div className="feature-item glass" style={{ padding: 'var(--space-4)' }}>
+            <div className="feature-item glass scroll-animate fade-up" style={{ padding: 'var(--space-4)' }}>
               <div className="feature-img-wrapper">
                  <img src="/assets/src_images/campfire2.webp" alt="Leisure" />
               </div>
               <h4>🔥 Campfire Activity</h4>
               <p>Relax with cozy campfire evenings filled with warmth, laughter, and memorable moments.</p>
             </div>
-            <div className="feature-item glass" style={{ padding: 'var(--space-4)' }}>
+            <div className="feature-item glass scroll-animate fade-up" style={{ padding: 'var(--space-4)' }}>
               <div className="feature-img-wrapper">
                  <img src="/assets/src_images/restaurant.webp" alt="Dining" />
               </div>
               <h4>🍽️ Multi-Cuisine Dining</h4>
               <p>Enjoy a variety of South Indian, North Indian, and continental dishes for all tastes.</p>
             </div>
-            <div className="feature-item glass" style={{ padding: 'var(--space-4)' }}>
+            <div className="feature-item glass scroll-animate fade-up" style={{ padding: 'var(--space-4)' }}>
               <div className="feature-img-wrapper">
                  <img src="/assets/src_images/Midvalley_1.webp" alt="Events" />
               </div>
@@ -243,7 +243,7 @@ const Home = () => {
       {/* Sightseeing Showcase: High-end horizontal scroll Flex track */}
       <section className="section section-padding">
         <div className="container">
-          <div className="section-header text-center">
+          <div className="section-header text-center scroll-animate fade-up">
             <p className="subtitle">BESPOKE ACTIVITIES</p>
             <h2>Explore Yercaud & Yelagiri</h2>
             <p style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--color-text-secondary)' }}>
@@ -261,7 +261,7 @@ const Home = () => {
                 { title: "🥾 Yelagiri Hills Trek", desc: "Experience trekking through Yelagiri's lush, winding trails with beautiful vistas.", img: "/assets/src_images/Yelagiri-Nature-Park.jpg", loc: "Yelagiri" },
                 { title: "💧 Jalagamparai Falls", desc: "Relax and enjoy the calming beauty of flowing seasonal waterfalls surrounded by nature.", img: "/assets/src_images/Jalagamparai-Falls.webp", loc: "Yelagiri" }
               ].map((item, idx) => (
-                <div key={idx} className="scroll-card glass">
+                <div key={idx} className="scroll-card glass scroll-animate fade-up">
                   <div className="scroll-card-img-frame">
                     <img src={item.img} alt={item.title} />
                     <span className="scroll-card-badge">{item.loc}</span>
@@ -278,7 +278,7 @@ const Home = () => {
       </section>
 
       {/* Founder's Promise Section */}
-      <section className="section container section-padding animate-fade-in-up" style={{ borderTop: '1px solid var(--color-border)' }}>
+      <section className="section container section-padding scroll-animate fade-up" style={{ borderTop: '1px solid var(--color-border)' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--space-8)', alignItems: 'center' }}>
           <div className="hover-zoom-container" style={{ height: '400px' }}>
             <img src="/assets/src_images/cropped-Harvest-Hill.png" alt="Arun Venkatesan, Founder" className="hover-zoom-img" style={{ width: '100%', height: '100%', objectFit: 'cover', border: '1px solid var(--color-border)' }} />
@@ -301,13 +301,13 @@ const Home = () => {
       {/* Testimonials Carousel Section */}
       <section className="section" style={{ backgroundColor: 'var(--color-secondary)', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container section-padding">
-          <div className="section-header text-center">
+          <div className="section-header text-center scroll-animate fade-up">
             <p className="subtitle">TESTIMONIALS</p>
             <h2>What Our Guests Say</h2>
           </div>
           
           <div className="testimonials-carousel-wrapper">
-            <div className="testimonials-carousel-card glass">
+            <div className="testimonials-carousel-card glass scroll-animate fade-up">
               <div className="testimonial-quote-symbol">“</div>
               <p className="testimonial-quote-text">
                 {testimonials[testimonialIndex].quote}
@@ -332,7 +332,7 @@ const Home = () => {
 
       {/* FAQ Section */}
       <section className="section container section-padding">
-        <div className="text-center" style={{ marginBottom: 'var(--space-6)' }}>
+        <div className="text-center scroll-animate fade-up" style={{ marginBottom: 'var(--space-6)' }}>
           <p className="subtitle">QUESTIONS & ANSWERS</p>
           <h2 style={{ color: 'var(--color-neutral)' }}>Frequently Asked Questions</h2>
         </div>
@@ -347,7 +347,7 @@ const Home = () => {
             { q: "Can I request local sightseeing support?", a: "Yes, we provide travel guidance for sightseeing, viewpoints (like Pagoda Point and Shevaroy Hills), waterfalls, and nearby attractions to make your trip smooth and well-planned." },
             { q: "How can I book my stay?", a: "You can book by clicking any of the 'Check Availability' or 'Plan Your Journey' buttons on our website, or by clicking the WhatsApp call button at the top/bottom to connect directly with our reservation team." }
           ].map((faq, idx) => (
-            <details key={idx} className="faq-details" style={{ borderBottom: '1px solid var(--color-border)', padding: 'var(--space-3) 0' }}>
+            <details key={idx} className="faq-details scroll-animate fade-up" style={{ borderBottom: '1px solid var(--color-border)', padding: 'var(--space-3) 0' }}>
               <summary style={{ cursor: 'pointer', fontWeight: '600', color: 'var(--color-neutral)', outline: 'none', padding: 'var(--space-2) 0', listStylePosition: 'inside' }}>
                 {faq.q}
               </summary>

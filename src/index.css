@@ -217,3 +217,86 @@ img {
   border-color: rgba(212, 175, 55, 0.25);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
+
+/* Premium Animations Overhaul */
+
+/* 1. Scroll-reveal animations */
+.scroll-animate {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate.fade-up {
+  transform: translateY(40px);
+}
+
+.scroll-animate.fade-in {
+  transform: none;
+}
+
+.scroll-animate.slide-left {
+  transform: translateX(50px);
+}
+
+.scroll-animate.slide-right {
+  transform: translateX(-50px);
+}
+
+.scroll-animate.scale-up {
+  transform: scale(0.96);
+}
+
+/* Visible states triggered by IntersectionObserver */
+.scroll-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* 2. Sliding Shine effect on Hover for Buttons */
+.btn-primary, .btn-outline, .escapes-cta, .popup-submit-btn, .booking-bar-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before, .btn-outline::before, .escapes-cta::before, .popup-submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+}
+
+.btn-primary:hover::before, .btn-outline:hover::before, .escapes-cta:hover::before, .popup-submit-btn:hover::before {
+  left: 150%;
+}
+
+/* 3. Slow Floating Natural Drift animations */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+/* Subtle page transition for route changes */
+.fade-in-page {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
