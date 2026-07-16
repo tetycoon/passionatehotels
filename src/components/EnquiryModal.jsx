@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, ArrowRight, CheckCircle } from 'lucide-react';
 import './EnquiryModal.css';
 
@@ -12,18 +12,53 @@ const EnquiryModal = ({ isOpen, onClose }) => {
     phone: ''
   });
 
+  useEffect(() => {
+    if (isOpen) {
+      const saved = sessionStorage.getItem('prefilledBooking');
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          setFormData(prev => ({
+            ...prev,
+            location: parsed.location || '',
+            dates: (parsed.startDate && parsed.endDate) ? `${parsed.startDate} to ${parsed.endDate}` : (parsed.startDate || ''),
+            guests: parsed.guests || ''
+          }));
+          if (parsed.location && parsed.startDate) {
+            setStep(3);
+          } else if (parsed.location) {
+            setStep(2);
+          }
+        } catch (e) {
+          console.error(e);
+        }
+        sessionStorage.removeItem('prefilledBooking');
+      }
+    } else {
+      setStep(1);
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const handleNext = () => setStep(step + 1);
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate submission
     setStep(4); // Success step
   };
 
   const handleClose = () => {
     onClose();
-    setTimeout(() => setStep(1), 300); // reset after closing animation
+    setTimeout(() => {
+      setStep(1);
+      setFormData({
+        location: '',
+        dates: '',
+        guests: '',
+        name: '',
+        phone: ''
+      });
+    }, 300);
   };
 
   return (

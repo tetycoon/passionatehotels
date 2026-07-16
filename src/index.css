@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
-  /* Aethelgard Core Colors */
-  --color-primary: #121212; /* Deep Charcoal */
-  --color-secondary: #2C2421; /* Rich Earth Brown */
-  --color-tertiary: #D4AF37; /* Sophisticated Gold */
-  --color-neutral: #e5e2df; /* Warm Bone */
+  /* Aethelgard Core Redesigned Colors: Luxury Forest Green, Wood-Brown, and Antique Gold */
+  --color-primary: #0a130c; /* Deep Forest Shadow */
+  --color-secondary: #2b1b12; /* Rich Wood-Brown */
+  --color-tertiary: #cba258; /* Brushed Antique Gold */
+  --color-neutral: #e6e3df; /* Warm Bone White */
   
   /* Additional tokens */
-  --color-bg-base: #131312;
-  --color-bg-elevated: #1c1c1a;
-  --color-border: rgba(255, 255, 255, 0.1);
-  --color-gold-muted: rgba(212, 175, 55, 0.3);
+  --color-bg-base: #09100a;
+  --color-bg-elevated: #111e13;
+  --color-border: rgba(197, 160, 89, 0.15);
+  --color-gold-muted: rgba(197, 160, 89, 0.25);
   
-  --color-text-primary: #e5e2df;
-  --color-text-secondary: rgba(229, 226, 223, 0.7);
-  --color-accent-gold: #D4AF37;
-  --color-accent-gold-hover: #C19F30;
-  --shadow-glow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  --color-text-primary: #e6e3df;
+  --color-text-secondary: rgba(230, 227, 223, 0.7);
+  --color-accent-gold: #cba258;
+  --color-accent-gold-hover: #b58d45;
+  --shadow-glow: 0 4px 15px rgba(197, 160, 89, 0.25);
 
   /* Typography */
-  --font-heading: 'Playfair Display', serif;
+  --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Montserrat', sans-serif;
   
   /* Spacing */
