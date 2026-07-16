@@ -37,7 +37,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
           <div className="modal-step fade-in">
             <h3>Where would you like to escape to?</h3>
             <div className="options-grid">
-              {['Yercaud', 'Yelagiri', 'Chennai', 'Not sure yet'].map((loc) => (
+              {['Yercaud', 'Yelagiri', 'Not sure yet'].map((loc) => (
                 <button 
                   key={loc}
                   className={`option-btn ${formData.location === loc ? 'selected' : ''}`}

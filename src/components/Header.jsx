@@ -27,7 +27,6 @@ const Header = ({ onOpenEnquiry }) => {
           <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           <Link to="/family-resort-in-yercaud" onClick={() => setMobileMenuOpen(false)}>Yercaud</Link>
           <Link to="/yelagiri" onClick={() => setMobileMenuOpen(false)}>Yelagiri</Link>
-          <Link to="/chennai" onClick={() => setMobileMenuOpen(false)}>Chennai</Link>
           <Link to="/gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
           <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
         </nav>

@@ -33,7 +33,6 @@ const Contact = () => {
                 <option value="">Choose a sanctuary</option>
                 <option value="yercaud">Yercaud</option>
                 <option value="yelagiri">Yelagiri</option>
-                <option value="chennai">Chennai OMR</option>
               </select>
             </div>
             <div className="form-group">
@@ -85,26 +84,6 @@ const Contact = () => {
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Yelagiri Map">
-              </iframe>
-            </div>
-          </div>
-
-          <div className="location-card">
-            <div className="location-info">
-              <h4>Chennai OMR</h4>
-              <p>Lynwood Villa<br/>OMR, Chennai, Tamil Nadu 600119</p>
-              <p className="contact-detail">Phone: +91 98765 43212</p>
-            </div>
-            <div className="location-map">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124409.80587289564!2d80.12519175!3d12.98637775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d1e4c7676c5%3A0x19dfa4a2a875a6c3!2sOld%20Mahabalipuram%20Rd%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }} 
-                allowFullScreen="" 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Chennai Map">
               </iframe>
             </div>
           </div>

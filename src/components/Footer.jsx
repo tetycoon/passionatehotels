@@ -25,7 +25,6 @@ const Footer = () => {
           <ul>
             <li><Link to="/family-resort-in-yercaud">Yercaud</Link></li>
             <li><Link to="/yelagiri">Yelagiri</Link></li>
-            <li><Link to="/chennai">Chennai (OMR)</Link></li>
           </ul>
         </div>
 

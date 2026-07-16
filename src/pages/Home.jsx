@@ -41,14 +41,6 @@ const Home = () => {
               <p>Untamed adventure.</p>
             </div>
           </Link>
-          
-          <Link to="/chennai" className="destination-card">
-            <img src="/assets/src_images/The-coastline-of-Chennai.jpg" alt="Chennai Resort" className="dest-img" />
-            <div className="dest-overlay">
-              <h3>Chennai OMR</h3>
-              <p>Urban luxury.</p>
-            </div>
-          </Link>
         </div>
       </section>
 
@@ -95,7 +87,7 @@ const Home = () => {
             <h2 style={{ color: 'var(--color-tertiary)', marginBottom: 'var(--space-4)' }}>Our Founder's Promise</h2>
             <div className="glass animate-fade-in-up" style={{ padding: 'var(--space-5)', borderRadius: '0px', borderLeft: '4px solid var(--color-tertiary)', fontStyle: 'italic' }}>
               <p style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--color-text-secondary)', textAlign: 'justify' }}>
-                "Passionate Hotels was born from my love for the serene beauty of the hills and the coast. What began as a dream inspired by Yelagiri has grown into welcoming retreats in Yercaud and Chennai. More than resorts, these are places of warmth, joy, and togetherness. Here, every guest becomes family—sharing laughter, sunsets, and heartfelt moments."
+                "Passionate Hotels was born from my love for the serene beauty of the hills. What began as a dream inspired by Yelagiri has grown into welcoming retreats in Yercaud and Yelagiri. More than resorts, these are places of warmth, joy, and togetherness. Here, every guest becomes family—sharing laughter, sunsets, and heartfelt moments."
               </p>
               <p style={{ color: 'var(--color-neutral)', fontWeight: '600', marginTop: 'var(--space-4)', fontSize: '1.1rem', textAlign: 'right' }}>
                 — Arun Venkatesan, Founder
