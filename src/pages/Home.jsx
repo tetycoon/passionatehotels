@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { X, CheckCircle, ArrowRight, Calendar, Users, MapPin } from 'lucide-react';
+import { X, CheckCircle, ArrowRight } from 'lucide-react';
 import './Home.css';
 
 const Home = () => {
@@ -11,14 +11,6 @@ const Home = () => {
     '/assets/src_images/campfire2.webp',
     '/assets/src_images/Yelagiri-Nature-Park.jpg'
   ];
-
-  // Booking Form State
-  const [bookingData, setBookingData] = useState({
-    startDate: '',
-    endDate: '',
-    location: '',
-    guests: '1'
-  });
 
   // Testimonials Carousel State
   const [testimonialIndex, setTestimonialIndex] = useState(0);
@@ -66,21 +58,6 @@ const Home = () => {
     }
   }, []);
 
-  // Handle Quick Booking Form Check
-  const handleBookingSubmit = (e) => {
-    e.preventDefault();
-    // Prefill data for EnquiryModal
-    sessionStorage.setItem('prefilledBooking', JSON.stringify({
-      startDate: bookingData.startDate,
-      endDate: bookingData.endDate,
-      location: bookingData.location,
-      guests: bookingData.guests
-    }));
-    // Programmatically open EnquiryModal by clicking the header action button
-    const btn = document.querySelector('.header-actions .btn-primary');
-    if (btn) btn.click();
-  };
-
   // Handle Registration Popup Submit
   const handlePopupSubmit = (e) => {
     e.preventDefault();
@@ -116,59 +93,6 @@ const Home = () => {
           </button>
         </div>
       </section>
-
-      {/* Inline Booking Check Bar directly below Hero */}
-      <div className="booking-bar-wrapper container">
-        <form className="booking-bar-form glass" onSubmit={handleBookingSubmit}>
-          <div className="booking-bar-field">
-            <label><Calendar size={14} /> Check In</label>
-            <input 
-              type="date" 
-              required
-              value={bookingData.startDate}
-              onChange={(e) => setBookingData({...bookingData, startDate: e.target.value})}
-            />
-          </div>
-          <div className="booking-bar-field">
-            <label><Calendar size={14} /> Check Out</label>
-            <input 
-              type="date" 
-              required
-              value={bookingData.endDate}
-              onChange={(e) => setBookingData({...bookingData, endDate: e.target.value})}
-            />
-          </div>
-          <div className="booking-bar-field">
-            <label><MapPin size={14} /> Escape To</label>
-            <select 
-              required
-              value={bookingData.location}
-              onChange={(e) => setBookingData({...bookingData, location: e.target.value})}
-            >
-              <option value="">Choose resort...</option>
-              <option value="Yercaud">Yercaud (Golden Paradise)</option>
-              <option value="Yelagiri">Yelagiri (Midvalley / Kurinji)</option>
-              <option value="Not sure yet">Not Sure Yet</option>
-            </select>
-          </div>
-          <div className="booking-bar-field">
-            <label><Users size={14} /> Guests</label>
-            <select 
-              value={bookingData.guests}
-              onChange={(e) => setBookingData({...bookingData, guests: e.target.value})}
-            >
-              <option value="1">1 Guest</option>
-              <option value="2">2 Guests</option>
-              <option value="3">3 Guests</option>
-              <option value="4">4 Guests</option>
-              <option value="5+">5+ Guests</option>
-            </select>
-          </div>
-          <button type="submit" className="btn-primary booking-bar-btn">
-            Check Availability
-          </button>
-        </form>
-      </div>
 
       {/* Welcome Section */}
       <section className="section container section-padding text-center" style={{ maxWidth: '900px', margin: '0 auto' }}>
