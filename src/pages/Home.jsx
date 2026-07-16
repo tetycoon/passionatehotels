@@ -115,12 +115,12 @@ const Home = () => {
         
         <div className="destinations-showcase-grid">
           {/* Yercaud Card */}
-          <div className="luxury-escapes-card glass scroll-animate fade-up">
+          <div className="luxury-escapes-card glass scroll-animate fade-up tilt-3d">
             <div className="escapes-img-frame">
               <img src="/assets/src_images/yercaud-view-1.jpg" alt="Yercaud Resort" />
               <div className="escapes-gold-corner"></div>
             </div>
-            <div className="escapes-info-block">
+            <div className="escapes-info-block tilt-3d-pop">
               <span className="escapes-tag">HILL STATION ESCAPE</span>
               <h3>Yercaud: Relax in Serene Beauty</h3>
               <p className="escapes-desc">
@@ -138,12 +138,12 @@ const Home = () => {
           </div>
 
           {/* Yelagiri Card */}
-          <div className="luxury-escapes-card glass scroll-animate fade-up" style={{ flexDirection: 'row-reverse' }}>
+          <div className="luxury-escapes-card glass scroll-animate fade-up tilt-3d" style={{ flexDirection: 'row-reverse' }}>
             <div className="escapes-img-frame">
               <img src="/assets/src_images/Jalagamparai-Falls.webp" alt="Yelagiri Resort" />
               <div className="escapes-gold-corner" style={{ left: '0px', right: 'auto', borderRight: 'none', borderLeft: '1px solid var(--color-tertiary)', borderBottom: 'none', borderTop: '1px solid var(--color-tertiary)' }}></div>
             </div>
-            <div className="escapes-info-block">
+            <div className="escapes-info-block tilt-3d-pop">
               <span className="escapes-tag">TRANQUIL VALLEY ESCAPE</span>
               <h3>Yelagiri: Escape to Tranquil Hills</h3>
               <p className="escapes-desc">
@@ -215,26 +215,26 @@ const Home = () => {
           </div>
           
           <div className="features-grid">
-            <div className="feature-item glass scroll-animate fade-up" style={{ padding: 'var(--space-4)' }}>
-              <div className="feature-img-wrapper">
+            <div className="feature-item glass scroll-animate fade-up tilt-3d" style={{ padding: 'var(--space-4)' }}>
+              <div className="feature-img-wrapper tilt-3d-pop">
                  <img src="/assets/src_images/campfire2.webp" alt="Leisure" />
               </div>
-              <h4>🔥 Campfire Activity</h4>
-              <p>Relax with cozy campfire evenings filled with warmth, laughter, and memorable moments.</p>
+              <h4 className="tilt-3d-pop">🔥 Campfire Activity</h4>
+              <p className="tilt-3d-pop">Relax with cozy campfire evenings filled with warmth, laughter, and memorable moments.</p>
             </div>
-            <div className="feature-item glass scroll-animate fade-up" style={{ padding: 'var(--space-4)' }}>
-              <div className="feature-img-wrapper">
+            <div className="feature-item glass scroll-animate fade-up tilt-3d" style={{ padding: 'var(--space-4)' }}>
+              <div className="feature-img-wrapper tilt-3d-pop">
                  <img src="/assets/src_images/restaurant.webp" alt="Dining" />
               </div>
-              <h4>🍽️ Multi-Cuisine Dining</h4>
-              <p>Enjoy a variety of South Indian, North Indian, and continental dishes for all tastes.</p>
+              <h4 className="tilt-3d-pop">🍽️ Multi-Cuisine Dining</h4>
+              <p className="tilt-3d-pop">Enjoy a variety of South Indian, North Indian, and continental dishes for all tastes.</p>
             </div>
-            <div className="feature-item glass scroll-animate fade-up" style={{ padding: 'var(--space-4)' }}>
-              <div className="feature-img-wrapper">
+            <div className="feature-item glass scroll-animate fade-up tilt-3d" style={{ padding: 'var(--space-4)' }}>
+              <div className="feature-img-wrapper tilt-3d-pop">
                  <img src="/assets/src_images/Midvalley_1.webp" alt="Events" />
               </div>
-              <h4>🎯 Indoor Games & Leisure</h4>
-              <p>Fun indoor games and free Wi-Fi for all age groups, perfect for relaxed leisure time.</p>
+              <h4 className="tilt-3d-pop">🎯 Indoor Games & Leisure</h4>
+              <p className="tilt-3d-pop">Fun indoor games and free Wi-Fi for all age groups, perfect for relaxed leisure time.</p>
             </div>
           </div>
         </div>
@@ -261,12 +261,12 @@ const Home = () => {
                 { title: "🥾 Yelagiri Hills Trek", desc: "Experience trekking through Yelagiri's lush, winding trails with beautiful vistas.", img: "/assets/src_images/Yelagiri-Nature-Park.jpg", loc: "Yelagiri" },
                 { title: "💧 Jalagamparai Falls", desc: "Relax and enjoy the calming beauty of flowing seasonal waterfalls surrounded by nature.", img: "/assets/src_images/Jalagamparai-Falls.webp", loc: "Yelagiri" }
               ].map((item, idx) => (
-                <div key={idx} className="scroll-card glass scroll-animate fade-up">
-                  <div className="scroll-card-img-frame">
+                <div key={idx} className="scroll-card glass scroll-animate fade-up tilt-3d">
+                  <div className="scroll-card-img-frame tilt-3d-pop">
                     <img src={item.img} alt={item.title} />
                     <span className="scroll-card-badge">{item.loc}</span>
                   </div>
-                  <div className="scroll-card-content">
+                  <div className="scroll-card-content tilt-3d-pop">
                     <h4>{item.title}</h4>
                     <p>{item.desc}</p>
                   </div>

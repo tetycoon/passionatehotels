@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
     window.scrollTo(0, 0);
 
     const timer = setTimeout(() => {
+      // 1. Scroll animations IntersectionObserver
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -27,8 +28,40 @@ const Layout = ({ children }) => {
       const elements = document.querySelectorAll('.scroll-animate');
       elements.forEach(el => observer.observe(el));
 
-      return () => observer.disconnect();
-    }, 100);
+      // 2. 3D Tilt Hover listeners
+      const tiltCards = document.querySelectorAll('.tilt-3d');
+      
+      const handleMouseMove = (e) => {
+        const card = e.currentTarget;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const xc = rect.width / 2;
+        const yc = rect.height / 2;
+        // Calculate tilt angles based on mouse position (max 15 degrees)
+        const angleX = (yc - y) / 15;
+        const angleY = (x - xc) / 15;
+        card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) translateY(-8px)`;
+      };
+
+      const handleMouseLeave = (e) => {
+        const card = e.currentTarget;
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+      };
+
+      tiltCards.forEach(card => {
+        card.addEventListener('mousemove', handleMouseMove);
+        card.addEventListener('mouseleave', handleMouseLeave);
+      });
+
+      return () => {
+        observer.disconnect();
+        tiltCards.forEach(card => {
+          card.removeEventListener('mousemove', handleMouseMove);
+          card.removeEventListener('mouseleave', handleMouseLeave);
+        });
+      };
+    }, 150);
 
     return () => clearTimeout(timer);
   }, [pathname]);
