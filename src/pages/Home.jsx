@@ -21,6 +21,15 @@ const Home = () => {
     { quote: "Peaceful stay with beautiful hill views, great service, and comfortable rooms. Highly recommended!", author: "Sylver Star", location: "Yercaud" }
   ];
 
+  const activities = [
+    { title: "⛵ Yercaud Lake Boating", desc: "Boating rests quietly among rolling green hills, where gentle waters mirror the sky and drifting clouds.", img: "/assets/src_images/yercaud_main.webp", loc: "Yercaud" },
+    { title: "🌊 Kiliyur Falls Hikes", desc: "Pours gracefully through lush green forests, its rushing waters echoing with mist and nature's rhythms.", img: "/assets/src_images/yercaud-view-1.jpg", loc: "Yercaud" },
+    { title: "⛰️ Shevaroy Hills Mist", desc: "Emerald hill peaks with cool mountain winds humming through misty cloud-kissed tea plantations.", img: "/assets/src_images/cropped-Harvest-Hill.png", loc: "Yercaud" },
+    { title: "🌅 Pagoda Point Sunrise", desc: "Golden sunrises awaken the hills, offering a quiet space where the mind finds peace.", img: "/assets/src_images/campfire2.webp", loc: "Yercaud" },
+    { title: "🥾 Yelagiri Hills Trek", desc: "Experience trekking through Yelagiri's lush, winding trails with beautiful vistas.", img: "/assets/src_images/Yelagiri-Nature-Park.jpg", loc: "Yelagiri" },
+    { title: "💧 Jalagamparai Falls", desc: "Relax and enjoy the calming beauty of flowing seasonal waterfalls surrounded by nature.", img: "/assets/src_images/Jalagamparai-Falls.webp", loc: "Yelagiri" }
+  ];
+
   // Delayed Registration Popup State
   const [showPopup, setShowPopup] = useState(false);
   const [popupData, setPopupData] = useState({
@@ -253,14 +262,7 @@ const Home = () => {
 
           <div className="sightseeing-horizontal-scroll">
             <div className="scroll-track">
-              {[
-                { title: "⛵ Yercaud Lake Boating", desc: "Boating rests quietly among rolling green hills, where gentle waters mirror the sky and drifting clouds.", img: "/assets/src_images/yercaud_main.webp", loc: "Yercaud" },
-                { title: "🌊 Kiliyur Falls Hikes", desc: "Pours gracefully through lush green forests, its rushing waters echoing with mist and nature's rhythms.", img: "/assets/src_images/yercaud-view-1.jpg", loc: "Yercaud" },
-                { title: "⛰️ Shevaroy Hills Mist", desc: "Emerald hill peaks with cool mountain winds humming through misty cloud-kissed tea plantations.", img: "/assets/src_images/cropped-Harvest-Hill.png", loc: "Yercaud" },
-                { title: "🌅 Pagoda Point Sunrise", desc: "Golden sunrises awaken the hills, offering a quiet space where the mind finds peace.", img: "/assets/src_images/campfire2.webp", loc: "Yercaud" },
-                { title: "🥾 Yelagiri Hills Trek", desc: "Experience trekking through Yelagiri's lush, winding trails with beautiful vistas.", img: "/assets/src_images/Yelagiri-Nature-Park.jpg", loc: "Yelagiri" },
-                { title: "💧 Jalagamparai Falls", desc: "Relax and enjoy the calming beauty of flowing seasonal waterfalls surrounded by nature.", img: "/assets/src_images/Jalagamparai-Falls.webp", loc: "Yelagiri" }
-              ].map((item, idx) => (
+              {[...activities, ...activities].map((item, idx) => (
                 <div key={idx} className="scroll-card glass scroll-animate fade-up tilt-3d">
                   <div className="scroll-card-img-frame tilt-3d-pop">
                     <img src={item.img} alt={item.title} />

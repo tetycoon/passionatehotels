@@ -271,27 +271,31 @@
   line-height: 1.6;
 }
 
-/* Horizontal scroll sightseeing activities flex track */
+/* Horizontal scroll sightseeing activities flex track - Auto-scrolling circular motion */
 .sightseeing-horizontal-scroll {
-  overflow-x: auto;
+  overflow: hidden;
   padding: var(--space-4) 0;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-tertiary) transparent;
   margin-top: var(--space-5);
-}
-
-.sightseeing-horizontal-scroll::-webkit-scrollbar {
-  height: 4px;
-}
-
-.sightseeing-horizontal-scroll::-webkit-scrollbar-thumb {
-  background: var(--color-tertiary);
 }
 
 .scroll-track {
   display: flex;
   gap: var(--space-4);
   width: max-content;
+  animation: marquee-scroll 35s linear infinite;
+}
+
+.scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(-50% - 8px), 0, 0);
+  }
 }
 
 .scroll-card {
