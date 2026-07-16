@@ -27,7 +27,9 @@ const Home = () => {
     name: '',
     email: '',
     phone: '',
-    purpose: ''
+    purpose: '',
+    checkIn: '',
+    checkOut: ''
   });
   const [popupSuccess, setPopupSuccess] = useState(false);
 
@@ -412,6 +414,26 @@ const Home = () => {
                         value={popupData.phone}
                         onChange={(e) => setPopupData({...popupData, phone: e.target.value})}
                       />
+                    </div>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                      <div className="popup-input-group">
+                        <label>Check In</label>
+                        <input 
+                          type="date" 
+                          required 
+                          value={popupData.checkIn}
+                          onChange={(e) => setPopupData({...popupData, checkIn: e.target.value})}
+                        />
+                      </div>
+                      <div className="popup-input-group">
+                        <label>Check Out</label>
+                        <input 
+                          type="date" 
+                          required 
+                          value={popupData.checkOut}
+                          onChange={(e) => setPopupData({...popupData, checkOut: e.target.value})}
+                        />
+                      </div>
                     </div>
                     <div className="popup-input-group">
                       <label>Purpose of Visit</label>
